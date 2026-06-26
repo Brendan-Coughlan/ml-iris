@@ -43,7 +43,7 @@ Each sample contains four features:
 | Logistic Regression | |
 | Decision Tree | |
 | Random Forest | |
-| K-Nearest Neighbors | |
+| K-Nearest Neighbors | 97.33% |
 | Support Vector Machine | |
 
 ## Figures

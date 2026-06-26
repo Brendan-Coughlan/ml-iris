@@ -20,12 +20,17 @@ def generate_pair_plot(iris_df):
 
     plt.close()
 
+def generate_correlation_heatmap(iris_df):
+    sns.heatmap(iris_df.drop(columns=["species"]).corr(), cmap="coolwarm", annot=True)
+    plt.savefig("images/correlation_heatmap.png")
+
+    plt.close()
+
 iris = load_iris(as_frame=True)
 df = iris.frame
 
 df["species"] = df["target"].map(dict(enumerate(iris.target_names)))
 
-print(df.head())
-
 generate_scatter_plot(df)
 generate_pair_plot(df)
+generate_correlation_heatmap(df)

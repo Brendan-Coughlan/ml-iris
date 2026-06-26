@@ -1,6 +1,6 @@
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.datasets import load_iris
-from sklearn.model_selection import KFold, cross_val_score
+from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 import numpy as np
@@ -14,8 +14,7 @@ pipeline = Pipeline(
     [("scaler", StandardScaler()), ("knn", KNeighborsClassifier(n_neighbors=5))]
 )
 
-kfold = KFold(n_splits=5, shuffle=True)
+kfold = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 scores = cross_val_score(pipeline, X, y, cv=kfold, scoring="accuracy")
 
-print("Accuracy scores for each fold:", scores)
-print("Mean Accuracy:", np.mean(scores))
+print(f"Mean Accuracy: {np.round(np.mean(scores)*100, 2)}%")
