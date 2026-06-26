@@ -27,7 +27,7 @@ This project makes use of the famous Iris dataset, first used by Sir R.A. Fisher
 
 The dataset contains 150 instances of iris flowers across three distinct species:
 - Setosa
-- Versicolour
+- Versicolor
 - Virginica
 
 Each sample contains four features:
@@ -47,3 +47,20 @@ Each sample contains four features:
 | Support Vector Machine | |
 
 ## Figures
+### Petal Measurements
+
+![Petal Size Scatter Plot](images/scatter_petal_size.png)
+
+Petal length and width provide strong separation between the three species.
+
+### Sepal Measurements
+
+![Sepal Size Scatter Plot](images/scatter_sepal_size.png)
+
+Sepal measurements show greater overlap, especially between Versicolor and Virginica.
+
+### Pair Plot
+
+![Pair Plot](images/pairplot.png)
+
+The pair plot visualizes every feature combination and highlights that petal measurements are the most informative features.
