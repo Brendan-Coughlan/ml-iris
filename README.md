@@ -40,7 +40,7 @@ Each sample contains four features:
 
 | Model | Accuracy |
 |-------|---------:|
-| Logistic Regression | |
+| Logistic Regression | 95.33% |
 | Decision Tree | |
 | Random Forest | |
 | K-Nearest Neighbors | 97.33% |
@@ -64,3 +64,7 @@ Sepal measurements show greater overlap, especially between Versicolor and Virgi
 ![Pair Plot](images/pairplot.png)
 
 The pair plot visualizes every feature combination and highlights that petal measurements are the most informative features.
+
+### Distributions
+
+![Distribution](images/distributions_4x3.png)
