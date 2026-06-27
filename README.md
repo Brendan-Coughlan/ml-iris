@@ -24,13 +24,15 @@ Each sample contains four features:
 
 ## Results
 
+*Results are reported as mean ± standard deviation across 5-fold cross-validation*
+
 | Model | Accuracy | Precision | Recall | F1 Score |
 |-------|---------|---------|---------|---------|
-| Logistic Regression | 95.33% |
-| Decision Tree | 95.33% |
-| Random Forest | 95.33% |
-| K-Nearest Neighbors | 97.33% |
-| Support Vector Machine | 96.0% |
+| Logistic Regression | 95.33% ± 4.52% | 95.49% ± 4.43% | 95.33% ± 4.52% | 95.32% ± 4.53% |
+| Decision Tree | 95.33% ± 3.40% | 95.72% ± 3.26% | 95.33% ± 3.40% | 95.31% ± 3.41% |
+| Random Forest | 95.33% ± 3.40% | 95.72% ± 3.26% | 95.33% ± 3.40% | 95.31% ± 3.41% |
+| K-Nearest Neighbors | 97.33% ± 2.49% | 97.45% ± 2.47% | 97.33% ± 2.49% | 97.33% ± 2.50% |
+| Support Vector Machine | 96.00% ± 3.89% | 96.11% ± 3.83% | 96.00% ± 3.89% | 95.99% ± 3.89% |
 
 ## Figures
 ### Petal Measurements
@@ -60,4 +62,10 @@ The pair plot visualizes every feature combination and highlights that petal mea
 
 ### Confusion Matrices
 
+![Logistic Regression Confusion Matrix](images/confusion_matrix_logistic_regression.png)
+![Decision Tree Confusion Matrix](images/confusion_matrix_decision_tree.png)
+![Random Forest Confusion Matrix](images/confusion_matrix_random_forest.png)
 ![KNN Confusion Matrix](images/confusion_matrix_knn.png)
+![SVM Confusion Matrix](images/confusion_matrix_svm.png)
+
+Most misclassifications occur between versicolor and virginica, which is expected given the overlap observed in the pair plot.

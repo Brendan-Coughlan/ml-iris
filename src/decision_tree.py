@@ -2,7 +2,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-from evaluator import evaluate_model
+from evaluator import evaluate_model, get_confusion_matrix
 
 iris = load_iris()
 
@@ -14,3 +14,4 @@ pipeline = Pipeline(
 )
 
 evaluate_model(pipeline, X, y)
+get_confusion_matrix(pipeline, X, y, "Decision Tree")
