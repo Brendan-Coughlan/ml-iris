@@ -44,7 +44,7 @@ Each sample contains four features:
 | Decision Tree | |
 | Random Forest | |
 | K-Nearest Neighbors | 97.33% |
-| Support Vector Machine | |
+| Support Vector Machine | 96.0% |
 
 ## Figures
 ### Petal Measurements
