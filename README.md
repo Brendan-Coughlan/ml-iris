@@ -1,22 +1,8 @@
 # Iris Machine Learning Project
 
-<table style="border: none">
-  <tr style="border: none">
-    <td align="center" style="border: none">
-      <img src="images/iris_setosa.jpg" width="400"><br>
-      <b>Iris Setosa</b>
-    </td>
-    <td align="center" style="border: none">
-      <img src="images/iris_versicolor.jpg" width="400"><br>
-      <b>Iris Versicolor</b>
-    </td>
-    <td align="center" style="border: none">
-      <img src="images/iris_virginica.jpg"
-      width="400"><br>
-      <b>Iris Virginica</b>
-    </td>
-  </tr>
-</table>
+| Setosa | Versicolor | Virginica |
+|--------|------------|-----------|
+| ![](images/iris_setosa.jpg) | ![](images/iris_versicolor.jpg) | ![](images/iris_virginica.jpg) |
 
 ## About The Project
 The Iris dataset is one of the most well-known datasets in machine learning. This project provides a comprehensive exploration of the dataset through exploratory data analysis (EDA), data visualization, feature engineering, and machine learning models to classify iris flower species.
@@ -38,8 +24,8 @@ Each sample contains four features:
 
 ## Results
 
-| Model | Accuracy |
-|-------|---------:|
+| Model | Accuracy | Precision | Recall | F1 Score |
+|-------|---------|---------|---------|---------|
 | Logistic Regression | 95.33% |
 | Decision Tree | 95.33% |
 | Random Forest | 95.33% |
