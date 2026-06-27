@@ -51,6 +51,13 @@ Sepal measurements show greater overlap, especially between Versicolor and Virgi
 
 The pair plot visualizes every feature combination and highlights that petal measurements are the most informative features.
 
-### Distributions
+### Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
 
-![Distribution](images/distributions_4x3.png)
+### Feature Distributions
+
+![Distribution](images/feature_distributions.png)
+
+### Confusion Matrices
+
+![KNN Confusion Matrix](images/confusion_matrix_knn.png)

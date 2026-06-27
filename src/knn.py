@@ -14,4 +14,4 @@ pipeline = Pipeline(
 )
 
 evaluate_model(pipeline, X, y)
-get_confusion_matrix(pipeline, X, y)
+get_confusion_matrix(pipeline, X, y, "KNN")

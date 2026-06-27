@@ -37,7 +37,7 @@ def evaluate_model(model, X, y):
     print(f"F1 Score: {scores['test_f1'].mean():.2f} ± {scores['test_f1'].std():.2f}")
 
 
-def get_confusion_matrix(model, X, y):
+def get_confusion_matrix(model, X, y, model_name):
     kfold = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
     y_pred = cross_val_predict(model, X, y, cv=kfold)
 
@@ -55,4 +55,6 @@ def get_confusion_matrix(model, X, y):
     )
     plt.xlabel("Predicted")
     plt.ylabel("Actual")
-    plt.show()
+    plt.title(f"{model_name} Confusion Matrix")
+    
+    plt.savefig(f"images/confusion_matrix_{model_name.lower()}.png")
