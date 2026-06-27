@@ -41,8 +41,8 @@ Each sample contains four features:
 | Model | Accuracy |
 |-------|---------:|
 | Logistic Regression | 95.33% |
-| Decision Tree | |
-| Random Forest | |
+| Decision Tree | 95.33% |
+| Random Forest | 95.33% |
 | K-Nearest Neighbors | 97.33% |
 | Support Vector Machine | 96.0% |
 

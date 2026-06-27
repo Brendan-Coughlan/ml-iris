@@ -1,4 +1,4 @@
-from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
@@ -10,7 +10,7 @@ X = iris.data
 y = iris.target
 
 pipeline = Pipeline(
-    [("scaler", StandardScaler()), ("logistic_regression", LogisticRegression(random_state=42))]
+    [("scaler", StandardScaler()), ("decision_tree", DecisionTreeClassifier(random_state=42))]
 )
 
 evaluate_model(pipeline, X, y)

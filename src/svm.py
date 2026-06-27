@@ -10,7 +10,7 @@ X = iris.data
 y = iris.target
 
 pipeline = Pipeline(
-    [("scaler", StandardScaler()), ("svm", SVC())]
+    [("scaler", StandardScaler()), ("svm", SVC(random_state=42))]
 )
 
 evaluate_model(pipeline, X, y)
